@@ -1,0 +1,1000 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+     padding:0;
+     margin: 0;
+     box-sizing: border-box;
+     text-decoration: none;
+     border: none;
+     outline: none;
+     font-family: Outfit, sans-serif;
+     color:#043a9d;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    background-color:#e2f1f9;
+    width:100%;
+}
+header{
+    background: linear-gradient(to right,#1d89ee,#1869d2, #043a9d );
+    width:100%;
+    height:10% ;
+    display:flex;
+    justify-content: space-between ;
+    align-items: center;
+    font-size: 1.8rem;
+    z-index: 1000;
+    padding: 6px 20px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    border-bottom-left-radius:10px ;
+    border-bottom-right-radius: 10px;
+
+}
+header img{
+    width: 150px;
+    height: 59px;
+    margin: 10px 50px;
+    float: left;
+}
+nav a{
+   display: inline-block;
+   margin:15px;
+   padding-bottom: 3px;
+   border-bottom: 2px solid transparent;
+   border-radius: 5px;
+   transition: all 0.3s ease;
+   color: #fff;
+}
+nav{
+    margin-right: 20px;
+}
+nav a:hover{
+    color: #2dad53;
+    border-bottom: 2px solid #2dad53;
+}
+.menu-toggle{
+    position: absolute;
+    right:0;
+    display: none;
+    font-size: 30px;
+ }
+ input[type="checkbox"]{
+     display: none;
+ }
+ 
+ @media (max-width:825px)
+ {
+     .menu-toggle{
+         display: block;
+         position: relative;
+         right: 0;
+         z-index: 1200;
+         background-color:  transparent;
+         border-radius: 50%;
+         padding: 5px;
+         background-color:transparent ;
+     }
+     .menu-toggle i{
+        background-color: transparent;
+     }
+     header{
+        width:100%;
+     }
+     nav {
+     position: fixed;
+     z-index: 2000;
+     top: 70px;
+     width: 35%;
+     left: -50%;
+     border-radius: 10%;
+     text-align: center;
+     transition: all 0.5s ease;
+     background-color: rgba(255, 255, 255, 0.15);
+     backdrop-filter: blur(12px);
+     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+     }
+     nav a{
+         display:block;
+         padding: 20px 20px;
+         background-color:  transparent;
+         color:rgb(25, 35, 47);
+         border-radius: 25px;
+        margin: 0;
+        }
+    nav a:hover{
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    #check:checked ~ nav  {
+         left: 0;
+    }
+    #home img{
+        width:45%;
+    }
+    #home{
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+}
+
+
+ #home{
+    padding-top: 4%;
+    padding-bottom: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px ;
+    max-width: 100vw;
+ }
+ #home .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:50%;
+ }
+ #home .container h1 {
+    font-size: 5rem;
+ }
+ #home .container .title-hello{
+    align-self: flex-start;
+    margin-bottom: 10px;
+ }
+ #home img {
+    width: 40%;
+    border-radius: 50%;
+ }
+.le-blanc{
+    padding-left: 29px;
+}
+#green{
+    color:#2dad53;
+    background-color: transparent;
+}
+#home p{
+    font-size: 1.8rem;
+    word-spacing: 0.09rem;
+    letter-spacing: 0.03rem;
+    text-align: justify;
+}
+.typing-text::after {
+    content: " ";
+    animation: type 2.5s infinite, blink 0.6s infinite;
+    font-size: 20px;
+    font-weight: bold;
+    border-right: 2px solid #2dad53;
+    overflow: hidden;
+    color:#2dad53;
+}
+
+@keyframes type {
+    0% {
+        content: " ";
+        visibility: visible;
+    }
+
+    2% {
+        content: "Q";
+        visibility: visible;
+    }
+
+    4% {
+        content: "Qu";
+        visibility: visible;
+    }
+
+    6% {
+        content: "Qua";
+        visibility: visible;
+    }
+
+    8% {
+        content: "Qual";
+        visibility: visible;
+    }
+
+    10% {
+        content: "Quali";
+        visibility: visible;
+    }
+
+    12% {
+        content: "Qualit";
+        visibility: visible;
+    }14% {
+        content: "Quality";
+        visibility: visible;
+    }
+
+    16% {
+        content: "Quality ";
+        visibility: visible;
+    }
+
+    18% {
+        content: "Quality a";
+        visibility: visible;
+    }
+    20% {
+        content: "Quality an";
+        visibility: visible;
+    }
+
+    22% {
+        content: "Quality and";
+        visibility: visible;
+    }
+
+    24% {
+        content: "Quality and ";
+        visibility: visible;
+    }
+
+    26% {
+        content: "Quality and C";
+        visibility: visible;
+    }
+
+    28% {
+        content: "Quality and Co";
+        visibility: visible;
+    }
+
+    30% {
+        content: "Quality and Con";
+        visibility: visible;
+    }
+
+    32% {
+        content: "Quality and Conf";
+        visibility: visible;
+    }
+
+    34% {
+        content: "Quality and Confo";
+        visibility: visible;
+    }
+
+    36% {
+        content: "Quality and Confor";
+        visibility: visible;
+    }
+
+    38% {
+        content: "Quality and Conform";
+        visibility: visible;
+    }
+
+    40% {
+        content: "Quality and Conformi";
+        visibility: visible;
+    }
+
+    42% {
+        content: "Quality and Conformit";
+        visibility: visible;
+    }
+
+    44% {
+        content: "Quality and Conformity";
+        visibility: visible;
+    }
+
+    46% {
+        content: "Quality and Conformity";
+        visibility: visible;
+    }
+
+    50% {
+        content: "Quality and Conformity";
+        visibility: visible;
+    }
+
+    52% {
+        content: "Quality and Conformit";
+        visibility: visible;
+    }
+
+    54% {
+        content: "Quality and Conformi";
+        visibility: visible;
+    }
+
+    56% {
+        content: "Quality and Conform";
+        visibility: visible;
+    }
+
+    58% {
+        content: "Quality and Confor";
+        visibility: visible;
+    }
+
+    60% {
+        content: "Quality and Confo";
+        visibility: visible;
+    }
+
+    62% {
+        content: "Quality and Conf";
+        visibility: visible;
+    }
+
+    64% {
+        content: "Quality and Con";
+        visibility: visible;
+    }
+
+    66% {
+        content: "Quality and Co";
+        visibility: visible;
+    }
+
+    68% {
+        content: "Quality and C";
+        visibility: visible;
+    }
+
+    70% {
+        content: "Quality and ";
+        visibility: visible;
+    }
+
+    72% {
+        content: "Quality and";
+        visibility: visible;
+    }
+
+    74% {
+        content: "Quality an";
+        visibility: visible;
+    }
+
+    76% {
+        content: "Quality a";
+        visibility: visible;
+    }
+
+    78% {
+        content: "Quality ";
+        visibility: visible;
+    }
+
+    80% {
+        content: "Quality";
+        visibility: visible;
+    }
+
+    82% {
+        content: "Qualit";
+        visibility: visible;
+    }
+
+    84% {
+        content: "Quali";
+        visibility: visible;
+    }
+
+    86% {
+        content: "Qual";
+        visibility: visible;
+    }
+
+    88% {
+        content: "Qua";
+        visibility: visible;
+    }
+
+    90% {
+        content: "Qu";
+        visibility: visible;
+    }
+
+    92% {
+        content: "Q";
+        visibility: visible;
+    }
+
+    94% {
+        content: "";
+        visibility: visible;
+    }
+}
+
+@keyframes blink {
+    0% {
+        border-color: #2dad53;
+    }
+
+    50% {
+        border-color: transparent;
+    }
+
+    100% {
+        border-color: #2dad53;
+    }
+}
+#home .buttons {
+    margin-top: 6rem;
+}
+
+#home .buttons a {
+    margin-right: 2.5rem;
+}
+
+#home .buttons a:nth-child(2) {
+    border: 1px solid rgb(25, 35, 47);
+    background-color: transparent;
+}
+
+#home .buttons a {
+    background-color: #2dad53;
+    padding: 13px 20px;
+    border-radius: 8px;
+    color: white;
+    font-size: 2rem;
+}
+
+#home .buttons a:hover {
+    box-shadow: 0 0 15px 1px rgb(56, 176, 92);
+    font-weight: 700;
+}
+
+  
+
+#aboutlab {
+    padding: 5% 2.5%;
+    width: 90%;
+    margin: 50px auto;
+    scroll-margin-top: 100px;
+    background-color:  rgba(0, 140, 255, 0.299);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+#aboutlab h3 ,#service h3 {
+    font-size: 3rem;
+    color: rgb(25, 43, 58);
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 0 10px 10px  #0000009b;
+}
+
+#aboutlab #main {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    color: rgb(25, 43, 58);
+    text-align: justify;
+    padding: 0 3rem;
+    word-spacing: 0.09rem;
+    letter-spacing: 0.03rem;
+}
+.sofadi-one-regular {
+    font-family: "Sofadi One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+#bold {
+    font-size: 2.8rem;
+    color: #094ea8;
+    font-weight: 700;
+}
+#important{
+
+        font-family: "Sofadi One", system-ui; /* Change font if necessary */
+        color: #1869d2; /* Highlighted color */
+        font-size: 1.8rem; /* Increase size slightly */
+        font-weight: bold; /* Make it stand out more */
+        text-transform: uppercase; /* Optional: Makes it all caps */
+
+}
+.aboutlab-content h5{
+    margin-top: 25px;
+    font-size: 2rem;
+    text-align: center;
+}
+.about-features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 200px;
+    max-width: 200px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.feature:hover {
+    background-color: #ffffffbe;
+    transform: scale(1.05);
+}
+
+.feature i {
+    font-size: 2.5rem;
+    color: #38b05c;
+    margin-bottom: 1rem;
+}
+
+.feature p {
+    font-size: 1.5rem;
+    color: rgb(25, 43, 58);
+}
+
+
+#service {
+    padding: 4% 8%;
+    text-align: center;
+   margin-bottom: 80px;
+}
+
+.service-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+
+.service-container {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 7rem;
+}
+
+.service-card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 15px;
+    padding: 4rem 2rem;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    text-align: left;
+    width : 40%;
+    min-height: 400px;
+}
+
+.service-card:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    background-color: #e0f7fa;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+
+
+.service-icon i {
+    font-size: 2.5rem;
+    color: #2dad53;
+}
+.service-card:hover h4{
+    color: #2dad53;
+}
+.service-card h4 {
+    font-size: 2rem;
+    color: #1869d2;
+    margin-bottom: 1rem;
+}
+.service-card.more{
+    display: flex;
+    align-items: flex-start;
+}
+.service-content.more{
+    max-height:335px;
+    overflow-y: auto;
+}
+.service-content::-webkit-scrollbar{
+    display: none;
+}
+
+.scroll-indicator {
+    position: absolute;
+    bottom: 4rem; /* Positionné en bas du conteneur */
+    right: 4rem; /* Aligné à droite */
+    height: 20px; /* Hauteur de l'indicateur */
+    width: 20px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    border-radius: 50%; /* Forme circulaire */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    line-height: 20px;
+    display: none; /* Caché par défaut */
+}
+
+.service-content.more .scroll-indicator {
+    display: block; /* Affiche l'indicateur lorsque la classe "more" est ajoutée */
+}
+.service-card ul ,
+.service-card p{
+    list-style-type: disc;
+    padding-left: 2.5rem;
+    font-size: 1.6rem;
+    color: #043a9d;
+}
+.service-card p{
+    padding-left: 0.5rem;
+    padding-bottom: 1rem;
+}
+.readmore-btn{
+    font-family: 'Lato',sans-serif;
+    color: gray;
+    font-size:1.4rem ;
+    cursor: pointer;
+    padding-left: 0;
+}
+.readmore-text{
+    display: none;
+}
+.readmore-show{
+    display: inline;
+}
+span.show{
+    display: none;
+}
+.service-card ul li {
+    margin-bottom: 0.5rem;
+}
+@media (max-width: 930px) {
+    .service-content.more{
+        max-height:375px;
+    }
+}
+
+
+@media (max-width: 854px) {
+
+    .service-content.more{
+        max-height:375px;
+    }
+    .scroll-indicator {
+        bottom: 4rem; /* Positionné en bas du conteneur */
+        right: 4rem; /* Aligné à droite */
+    }
+    .service-container {
+        gap: 3rem;
+    }
+    #service {
+        padding: 4% ;
+
+    }
+}
+
+@media (max-width: 780px) {
+
+    #service {
+        padding: 3%;
+    }
+    .service-container {
+        gap: 2.5rem;
+    }
+    .service-card {
+        padding: 3rem 2rem;
+    }
+}
+@media (max-width: 767px) {
+    .service-card {
+        padding: 2.5rem 1.5rem;
+    }
+
+    .service-icon {
+        margin-bottom: 1rem;
+        margin-right: 0; 
+    }
+    .service-content.more{
+        max-height:370px;
+       
+    }
+    .scroll-indicator {
+        bottom: 4rem; /* Positionné en bas du conteneur */
+        right: 4rem; /* Aligné à droite */
+    }
+    .service-container {
+        gap: 2rem;
+    }
+    #service {
+        padding: 3% ;
+
+    }
+
+} 
+@media (max-width: 738px) {
+
+    .service-content.more{
+        max-height:390px; 
+       
+    }
+    #service {
+        padding: 2% ;
+
+    }
+}
+@media (max-width: 651px) {
+    .service-content.more{
+        max-height:432px; 
+       
+    }
+    .service-card{
+        min-height: 481px;
+    }
+    .scroll-indicator {
+        bottom: 5rem; 
+        right: 4rem; 
+    }
+
+}
+
+@media (max-width: 640px) {
+    .service-content.more{
+        max-height:267px; 
+       
+    }
+    .service-card{
+        min-height: 320px;
+    }
+    .scroll-indicator {
+        bottom: 5rem; 
+        right: 4rem; 
+    }
+    .service-container {
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+
+    #service {
+        padding: 1% ;
+
+    }
+}
+
+@media (max-width: 476px) {
+    .service-content.more{
+        max-height:223px; 
+       
+    }
+    .service-card{
+        min-height: 290px;
+    }
+    #service {
+        padding: 1% ;
+
+    }
+}
+@media (max-width: 256px) {
+    .service-content.more{
+        max-height:245px; 
+       
+    }
+    .service-card{
+        min-height: 290px;
+    }
+    #service {
+        padding: 1% ;
+
+    }
+}
+@media (max-width: 214px) {
+    .service-content.more{
+        max-height:260px; 
+       
+    }
+    .service-card{
+        min-height: 320px;
+    }
+}
+
+
+#contact {
+    display: flex;
+    gap: 20px; 
+    justify-content: space-evenly;
+    background:linear-gradient(to right,#1d89ee,#1869d2, #043a9d );
+    height: fit-content;
+    width:100%;
+}
+
+#contact #row {
+    font-size: 2.5rem;
+    padding: 10px;
+    color: white;
+    background-color: #38b05c;
+    border-radius: 50%;
+}
+
+#contact div {
+    background-color: transparent;
+    margin-top: 20px;
+    text-align: center;
+    width: 33% ;
+   margin-bottom: 20px;
+    
+}
+#contact div h4 {
+    background-color: transparent;
+    font-size: 2rem;
+    margin:  20px 20px 10px 20px ;
+    color: white;
+}
+
+#contact div p{
+    background-color: transparent;
+}
+#contact div p *{
+    background-color: transparent;
+    color: white;
+    font-size: 1.5rem;
+}
+#contact div p i{
+    margin: 6px;
+}
+#contact div p #num{
+    margin: 13px 10px ;
+}
+#conatct div p #email{
+    display: flex;
+    flex-wrap: wrap;
+}
+@media(max-width:768px){
+    #contact{
+        height:fit-content;
+        gap: 5px;
+    }   
+    #contact div h4 {
+        font-size: 1.6rem;
+        margin:3px
+    }
+    #contact #row {
+        font-size: 1.6rem;
+    }
+  
+    #contact div p *{
+        font-size: 1.4rem;
+    }
+}
+@media (max-width: 640px) {
+
+    html{
+        font-size: 49%;
+    }
+    #home{
+        flex-direction: column-reverse;
+    }
+    #home .container{
+        width: 100%;
+    }
+    #aboutlab{
+        width:90%;
+    }
+    #aboutlab p{
+        font-size: 1.8rem;
+        padding: 0 35px 0 35px;
+    }
+    .service-card{
+        height: 270px;
+        width:270px;
+    }
+    #aboutlab h3 ,
+    #service h3{
+        font-size: 2.8rem;
+        margin-bottom: 20px;
+    }
+    #contact{
+        height:fit-content;
+        gap:4px
+    }
+
+    #contact #row {
+        font-size: 1.6rem;
+    }
+    
+    #contact div h4 {
+        font-size: 1.8rem;
+        margin:3px
+    }
+    
+    #contact div p *{
+        font-size: 1.6rem;
+    }
+    
+    #contact div p #num::before{
+        margin: 2.5px 2px ;
+    }
+}
+@media  (max-width: 353px) {
+    #contact{
+        gap: 0;
+    }
+    #contact div p #email{
+  white-space: normal;
+  word-wrap: break-word; 
+  overflow-wrap: break-word; 
+    }
+}
+@media  (max-width: 550px) {
+    #contact{
+        gap: 0;
+    }
+    #contact div p *{
+        font-size: 1.5rem;
+    }
+}
+@media(max-width: 503px){
+    #contact div p *{
+        font-size: 1.4rem;
+    }
+}
+@media (max-width: 475px) {
+    html{
+        font-size: 40%;
+    }
+    #home{
+        flex-direction: column-reverse;
+    }
+    #aboutlab{
+        width:90%;
+    }
+    #aboutlab p{
+        font-size: 1.5rem;
+        padding: 0 35px 0 35px;
+    }
+    .service-card{
+        padding:2.5rem;
+    }
+    .feature{
+        max-width:100px;
+    }
+    #aboutlab h3 ,
+    #service h3{
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+    }
+    #contact{
+        height:fit-content;
+    }
+    #contact #row {
+        font-size: 1.7rem;
+        padding: 8px;
+    } 
+    #contact div h4 {
+        font-size: 1.4rem;
+        margin:3px
+    }  
+    #contact div p *{
+        font-size: 1.3rem;
+    }
+    #contact div p i{
+        margin: 3px;
+    }
+    
+    #contact div p #num{
+        margin: 6.3px 5px ;
+    }
+}
